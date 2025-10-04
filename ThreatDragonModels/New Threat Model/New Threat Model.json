@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "dfc43a4e-e464-4072-bb0f-1a49c24d20e1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "d78bae5b-7a5d-41ce-b2d2-66f3f285380e",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -278,6 +278,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -361,7 +362,6 @@
               ]
             },
             "id": "e34e5eca-139a-4b0a-a21a-93b8def71984",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database\n\n",
@@ -399,6 +399,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -482,7 +483,6 @@
               ]
             },
             "id": "7a28052d-c079-4938-9c5d-e2669a6bbdd9",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -1096,6 +1096,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1179,7 +1180,6 @@
               ]
             },
             "id": "18be2d55-9289-4c17-bf57-6a934a918f34",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "LDAP",
