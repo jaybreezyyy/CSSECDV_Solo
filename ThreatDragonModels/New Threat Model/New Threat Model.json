@@ -265,7 +265,7 @@
             },
             "attrs": {
               "text": {
-                "text": "SQL"
+                "text": "SQL Database \n\n"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -364,7 +364,7 @@
             "id": "e34e5eca-139a-4b0a-a21a-93b8def71984",
             "data": {
               "type": "tm.Store",
-              "name": "SQL Database\n\n",
+              "name": "SQL Database \n\n",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -376,6 +376,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
