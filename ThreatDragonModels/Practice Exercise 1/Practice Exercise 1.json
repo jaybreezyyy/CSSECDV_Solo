@@ -1284,7 +1284,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Requests to view basic sales report",
+              "name": "Requests to view incoming orders",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1297,7 +1297,7 @@
               "threats": []
             },
             "labels": [
-              "Requests to view basic sales report"
+              "Requests to view incoming orders"
             ],
             "id": "e1fd2e9c-d386-46e3-9bbd-008f3d2ed1a3",
             "source": {
@@ -1330,7 +1330,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "sends sales data",
+              "name": "sends pending order data",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1343,7 +1343,7 @@
               "threats": []
             },
             "labels": [
-              "sends sales data"
+              "sends pending order data"
             ],
             "id": "672cd977-f46b-48b2-be49-a42fc6189083",
             "source": {
@@ -1353,6 +1353,102 @@
             "target": {
               "x": 120,
               "y": 400
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 400
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "queries for relevant order data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "queries for relevant order data"
+            ],
+            "id": "2bfbf29f-238f-486d-88cb-16b364b4d7d4",
+            "source": {
+              "x": 720,
+              "y": 260
+            },
+            "target": {
+              "x": 1220,
+              "y": 270
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Retrieves the pending order data and send",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Retrieves the pending order data and send"
+            ],
+            "id": "b1174e11-1713-4d7a-b632-eb25f624c4da",
+            "source": {
+              "cell": "1ddbba8a-d2df-4bbc-8a8e-79784d80b2df",
+              "port": "73d564ae-d662-4005-b5da-8da1759f97e0"
+            },
+            "target": {
+              "cell": "2b0fc3b7-d4bf-4610-a959-a06f0bb95f91",
+              "port": "5018856d-58da-44a8-a654-fc8438d9c659"
             }
           }
         ]
