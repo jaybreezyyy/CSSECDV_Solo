@@ -1737,8 +1737,8 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 224.9999999999999
+              "x": 740,
+              "y": 219.9999999999999
             },
             "size": {
               "width": 220,
@@ -1857,8 +1857,8 @@
           },
           {
             "position": {
-              "x": 1243,
-              "y": 224.9999999999999
+              "x": 1373,
+              "y": 229.9999999999999
             },
             "size": {
               "width": 280,
@@ -1999,6 +1999,51 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "authenticates and authorizes",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "authenticates and authorizes"
+            ],
+            "id": "0e99b828-66c7-4170-97e1-f1b97dd1e079",
+            "source": {
+              "cell": "e67a7bcf-5d90-47a1-8939-770058324939",
+              "port": "a79cfeed-63ad-4511-a33e-076f2bdb0027"
+            },
+            "target": {
+              "cell": "a2a9c586-5c18-401c-abe7-7f3694cac497",
+              "port": "6d448fd3-2ab4-4484-813e-7e7aab422872"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Log in",
               "description": "",
               "outOfScope": false,
@@ -2020,9 +2065,246 @@
               "y": 269
             },
             "target": {
-              "x": 710,
+              "x": 760,
               "y": 270
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "requests to view basic sales reports",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "requests to view basic sales reports"
+            ],
+            "id": "5c241b5b-bfa2-4273-a9fd-a6d6d567fb7e",
+            "source": {
+              "x": 473,
+              "y": 353
+            },
+            "target": {
+              "x": 760,
+              "y": 380
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 353
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "sends sales data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "sends sales data"
+            ],
+            "id": "3ad806bf-372d-4360-8f2a-71e2f9b1ca43",
+            "source": {
+              "x": 770,
+              "y": 400
+            },
+            "target": {
+              "x": 470,
+              "y": 390
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "retrieves the requested sales data and sends it",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "retrieves the requested sales data and sends it"
+            ],
+            "id": "8fe10a41-2d35-45ad-8b95-75f8f8a3b37b",
+            "source": {
+              "cell": "6a9d741e-f40a-4045-9565-b3c56bee8608",
+              "port": "bf0ff10e-0ef6-4a6e-9c1c-283523ea015c"
+            },
+            "target": {
+              "cell": "e67a7bcf-5d90-47a1-8939-770058324939",
+              "port": "ee4a7701-3b4b-4e7e-88dd-d9da75f85f3a"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "queries for aggregated sales data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "queries for aggregated sales data"
+            ],
+            "id": "79c1c5e9-bd6a-42d4-93be-a5435495c26d",
+            "source": {
+              "x": 940,
+              "y": 280
+            },
+            "target": {
+              "x": 1370,
+              "y": 270
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "displays the basic sales report",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "displays the basic sales report"
+            ],
+            "id": "de5774de-a660-40aa-9ae9-48edc157b428",
+            "source": {
+              "x": 403,
+              "y": 400
+            },
+            "target": {
+              "cell": "e67a7bcf-5d90-47a1-8939-770058324939",
+              "port": "5b54872a-234b-42f2-90bd-ca8248f9e776"
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 460
+              }
+            ]
           }
         ]
       },
