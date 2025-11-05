@@ -2926,16 +2926,16 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "1c446f1b-9e0f-4d23-a90e-af376c7e6500",
-                  "title": "Staff Account Spoofing",
+                  "id": "4f77be5b-6d5c-45c8-ac45-0efd622cff4f",
+                  "title": "Menu Data Tampering",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "An attacker could impersonate staff to manipulate order statuses,\naccess sales reports, or modify menu items and application\nconfigurations.",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions)\nbefore it is stored in the database.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 24,
+                  "number": 39,
                   "score": ""
                 }
               ],
@@ -3097,23 +3097,29 @@
                   "new": false,
                   "number": 32,
                   "score": ""
+                },
+                {
+                  "id": "2fe68d86-112f-4880-bf29-7c6e273ce2f1",
+                  "title": "Menu Data Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could alter menu item data (e.g., prices or descriptions)\nbefore it is stored in the database.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3204,51 +3210,6 @@
             "target": {
               "x": 780,
               "y": 300
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "input validation, and authorizes the request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "input validation, and authorizes the request"
-            ],
-            "id": "e9c61815-0646-4920-b8da-c9626bb86511",
-            "source": {
-              "x": 780,
-              "y": 400
-            },
-            "target": {
-              "x": 390,
-              "y": 400
             }
           },
           {
@@ -3391,12 +3352,57 @@
               "x": 990,
               "y": 410
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "input validation, and authorizes the request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "input validation, and authorizes the request"
+            ],
+            "id": "e9c61815-0646-4920-b8da-c9626bb86511",
+            "source": {
+              "x": 780,
+              "y": 400
+            },
+            "target": {
+              "x": 390,
+              "y": 400
+            }
           }
         ]
       }
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 38
+    "threatTop": 40
   }
 }
