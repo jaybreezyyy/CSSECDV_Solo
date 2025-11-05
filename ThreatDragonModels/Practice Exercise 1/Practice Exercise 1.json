@@ -199,13 +199,26 @@
                   "new": false,
                   "number": 50,
                   "score": ""
+                },
+                {
+                  "id": "55745d83-1e07-45a8-ad2e-bb9704d718bc",
+                  "title": "Customer PII Disclosure ",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery\naddresses, and order history",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 60,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 2,
                 "repudiation": 1,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -628,12 +641,25 @@
                   "new": false,
                   "number": 51,
                   "score": ""
+                },
+                {
+                  "id": "0664aed6-fe60-45f9-951f-a1da5f525f6e",
+                  "title": "Customer PII Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Unauthorized access to customer names, contact details, delivery\naddresses, and order history",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 61,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 2,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -3538,6 +3564,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 59
+    "threatTop": 61
   }
 }
