@@ -2430,6 +2430,19 @@
                   "new": false,
                   "number": 73,
                   "score": ""
+                },
+                {
+                  "id": "55924d1c-0a9a-424c-857a-fe17b4233b9e",
+                  "title": "MongoDB Database DoS ",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database,\nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 83,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2437,7 +2450,7 @@
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 2,
-                "denialOfService": 1,
+                "denialOfService": 2,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2445,7 +2458,7 @@
           {
             "position": {
               "x": 1373,
-              "y": 229.9999999999999
+              "y": 224.9999999999999
             },
             "size": {
               "width": 280,
@@ -2617,13 +2630,26 @@
                   "new": false,
                   "number": 74,
                   "score": ""
+                },
+                {
+                  "id": "5cc0eddb-d41c-47f3-a3ef-a9dd23851648",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database,\nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 84,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 1
+                "denialOfService": 2
               }
             },
             "tools": {
@@ -3818,6 +3844,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 82
+    "threatTop": 84
   }
 }
