@@ -3610,6 +3610,19 @@
                   "new": false,
                   "number": 87,
                   "score": ""
+                },
+                {
+                  "id": "5cc6cd69-865b-47ab-b897-fb80e8bd8e18",
+                  "title": "Customer to Staff Privilege Escalation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "A customer could exploit a vulnerability to gain unauthorized access to\nBarista, Manager, or Administrator functionalities.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 95,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -3618,8 +3631,15 @@
                 "repudiation": 1,
                 "informationDisclosure": 2,
                 "denialOfService": 2,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3903,6 +3923,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 94
+    "threatTop": 95
   }
 }
