@@ -1828,7 +1828,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Manager"
+                "text": "Manager Browser"
               },
               "body": {
                 "stroke": "red",
@@ -1924,7 +1924,7 @@
             "id": "a2a9c586-5c18-401c-abe7-7f3694cac497",
             "data": {
               "type": "tm.Actor",
-              "name": "Manager",
+              "name": "Manager Browser",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1944,10 +1944,23 @@
                   "new": false,
                   "number": 19,
                   "score": ""
+                },
+                {
+                  "id": "6ccf50f1-c009-4ee8-ae1a-9ceb268585d0",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 29,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -1963,7 +1976,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Application"
+                "text": "Web Application Server"
               },
               "body": {
                 "stroke": "red",
@@ -2059,7 +2072,7 @@
             "id": "e67a7bcf-5d90-47a1-8939-770058324939",
             "data": {
               "type": "tm.Process",
-              "name": "Web Application",
+              "name": "Web Application Server",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2082,16 +2095,40 @@
                   "new": false,
                   "number": 20,
                   "score": ""
+                },
+                {
+                  "id": "9a59578c-1ad5-47d8-ac11-1c2fdaf7f0d3",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2238,13 +2275,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3295,6 +3325,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 28
+    "threatTop": 30
   }
 }
