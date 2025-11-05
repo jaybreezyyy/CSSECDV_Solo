@@ -922,7 +922,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Barista"
+                "text": "Barista Browser"
               },
               "body": {
                 "stroke": "red",
@@ -1018,7 +1018,7 @@
             "id": "b7abc139-c247-468c-806b-7781833ac49a",
             "data": {
               "type": "tm.Actor",
-              "name": "Barista",
+              "name": "Barista Browser",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1038,12 +1038,32 @@
                   "new": false,
                   "number": 16,
                   "score": ""
+                },
+                {
+                  "id": "4e06e385-c6d1-4b39-abb3-1d14d0ac5e27",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1176,10 +1196,23 @@
                   "new": false,
                   "number": 17,
                   "score": ""
+                },
+                {
+                  "id": "c43b1d45-7468-4aff-83d2-7b0205eabaca",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -3262,6 +3295,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 26
+    "threatTop": 28
   }
 }
