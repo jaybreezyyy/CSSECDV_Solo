@@ -173,11 +173,24 @@
                   "new": false,
                   "number": 34,
                   "score": ""
+                },
+                {
+                  "id": "66f8b43d-5767-4209-ad98-6a49175a50c8",
+                  "title": "Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Malicious modification of the application’s source code, server\nconfigurations, or environment variables could introduce backdoors or\ndisable security features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -585,19 +598,6 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "4a7d67cb-89b0-4f3a-ac83-1dd8c5f93913",
-                  "title": "Customer Account Spoofing ",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
-                  "score": ""
-                },
-                {
                   "id": "05fb69c8-cc78-4b29-b95b-e115f3abf35e",
                   "title": "Order Data Tampering",
                   "status": "Open",
@@ -612,7 +612,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -3403,6 +3403,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 40
+    "threatTop": 43
   }
 }
