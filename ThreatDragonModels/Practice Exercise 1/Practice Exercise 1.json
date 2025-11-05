@@ -2326,6 +2326,19 @@
                   "new": false,
                   "number": 65,
                   "score": ""
+                },
+                {
+                  "id": "bde672cf-6a00-43c8-a338-01e94f2e603f",
+                  "title": "Application Code and Configuration Disclosure",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Exposure of source code, server configurations, environment variables,\nor API keys.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 71,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -2333,7 +2346,7 @@
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
             }
@@ -2508,15 +2521,6 @@
                 "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3684,6 +3688,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 70
+    "threatTop": 71
   }
 }
