@@ -2621,7 +2621,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Administrator"
+                "text": "Administrator Browser"
               },
               "body": {
                 "stroke": "red",
@@ -2717,7 +2717,7 @@
             "id": "b2a09bd1-2d89-4a83-a9a9-55043eb01e81",
             "data": {
               "type": "tm.Actor",
-              "name": "Administrator",
+              "name": "Administrator Browser",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -2737,10 +2737,23 @@
                   "new": false,
                   "number": 22,
                   "score": ""
+                },
+                {
+                  "id": "3dbe0700-6a0d-414e-9673-cd20cf38388f",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "repudiation": 0
               }
             }
@@ -3028,16 +3041,36 @@
                   "new": false,
                   "number": 23,
                   "score": ""
+                },
+                {
+                  "id": "86d9ee3d-84e8-4b66-99ec-9f86e5dc92f6",
+                  "title": "Web Application Server Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker might set up a fraudulent web server to phish user\ncredentials or intercept sensitive data.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3321,6 +3354,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 30
+    "threatTop": 32
   }
 }
