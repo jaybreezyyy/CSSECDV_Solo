@@ -1303,13 +1303,26 @@
                   "new": false,
                   "number": 52,
                   "score": ""
+                },
+                {
+                  "id": "223c4ff2-9a9f-4d11-bf38-1eed9b7e7700",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members\ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 62,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 1,
                 "repudiation": 2,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -1477,21 +1490,27 @@
                   "new": false,
                   "number": 53,
                   "score": ""
+                },
+                {
+                  "id": "6236f4e0-f975-4f45-9b3a-18152b05ea6f",
+                  "title": "Staff Credential Disclosure",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Exposure of usernames, passwords, or session tokens for staff members\ndue to insecure storage or unencrypted transmission.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 63,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 2,
                 "repudiation": 1,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3564,6 +3583,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 61
+    "threatTop": 63
   }
 }
