@@ -1444,6 +1444,19 @@
                   "new": false,
                   "number": 93,
                   "score": ""
+                },
+                {
+                  "id": "a8d0a9f0-252b-46cf-baea-5470f8110a68",
+                  "title": "Horizontal Privilege Escalation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Gaining unauthorized access to another user’s account within the same\nprivilege level.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 98,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1452,15 +1465,8 @@
                 "repudiation": 2,
                 "informationDisclosure": 2,
                 "denialOfService": 1,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3960,6 +3966,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 97
+    "threatTop": 98
   }
 }
