@@ -3320,13 +3320,26 @@
                   "new": false,
                   "number": 68,
                   "score": ""
+                },
+                {
+                  "id": "fccc0e8f-6ee6-4843-b55c-73542211aa12",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database,\nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 88,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 1,
-                "denialOfService": 0
+                "denialOfService": 1
               }
             }
           },
@@ -3551,6 +3564,19 @@
                   "new": false,
                   "number": 78,
                   "score": ""
+                },
+                {
+                  "id": "bbf83e39-b04f-4f1e-b3a1-18ff252cbb01",
+                  "title": "MongoDB Database DoS",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Denial of service",
+                  "description": "Malicious or poorly optimized queries could overload the database,\nmaking it unresponsive.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 87,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -3558,8 +3584,8 @@
                 "tampering": 2,
                 "repudiation": 1,
                 "informationDisclosure": 2,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 0
+                "denialOfService": 2,
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -3844,6 +3870,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 84
+    "threatTop": 88
   }
 }
