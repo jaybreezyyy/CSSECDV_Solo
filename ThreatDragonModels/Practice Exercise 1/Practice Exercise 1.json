@@ -618,7 +618,7 @@
                 },
                 {
                   "id": "553d3dc1-e5b2-438a-935c-96021b2b8dc6",
-                  "title": "Repudiation",
+                  "title": "Fraudulent Order Repudiation",
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
@@ -632,7 +632,7 @@
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
