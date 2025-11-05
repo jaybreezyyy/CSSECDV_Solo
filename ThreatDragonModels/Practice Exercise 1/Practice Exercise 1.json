@@ -1362,6 +1362,19 @@
                   "new": false,
                   "number": 70,
                   "score": ""
+                },
+                {
+                  "id": "86ba2c90-2bb1-48b3-9794-39d752031f47",
+                  "title": "Web Application Server DoS ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker could flood the Web Application Server with excessive\nrequests, making it unavailable. ",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 76,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1369,16 +1382,9 @@
                 "tampering": 1,
                 "repudiation": 2,
                 "informationDisclosure": 2,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3747,6 +3753,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 75
+    "threatTop": 76
   }
 }
