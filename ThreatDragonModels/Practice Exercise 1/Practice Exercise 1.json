@@ -1232,12 +1232,25 @@
                   "new": false,
                   "number": 37,
                   "score": ""
+                },
+                {
+                  "id": "8e9e2f56-8cca-4819-9c22-045702529cb1",
+                  "title": "Application Code/Configuration Tampering",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Malicious modification of the application’s source code, server\nconfigurations, or environment variables could introduce backdoors or\ndisable security features.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 47,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 1,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -1401,13 +1414,6 @@
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -3409,6 +3415,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 46
+    "threatTop": 47
   }
 }
