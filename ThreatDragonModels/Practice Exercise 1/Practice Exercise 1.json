@@ -31,13 +31,14 @@
                 "text": "Web Application Server"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "366a6d1c-9315-435c-a6f5-947d3368f612",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application Server",
@@ -129,12 +129,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9000468b-419d-4b8b-9c8e-b706ba95e7b2",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -148,16 +170,17 @@
             },
             "attrs": {
               "text": {
-                "text": "Customer"
+                "text": "Customer Browser"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,17 +264,34 @@
               ]
             },
             "id": "b7abc139-c247-468c-806b-7781833ac49a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
-              "name": "Customer",
+              "name": "Customer Browser",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a230a7db-5f92-4e15-8cbf-1ec1c741ade6",
+                  "title": "Customer Account Spoofing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -275,6 +315,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -358,7 +399,6 @@
               ]
             },
             "id": "2b0fc3b7-d4bf-4610-a959-a06f0bb95f91",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Payment Gateway",
@@ -388,16 +428,19 @@
                 "text": "MonggoDB Database"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -481,7 +524,6 @@
               ]
             },
             "id": "1ddbba8a-d2df-4bbc-8a8e-79784d80b2df",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "MonggoDB Database",
@@ -489,13 +531,42 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "4a7d67cb-89b0-4f3a-ac83-1dd8c5f93913",
+                  "title": "Customer Account Spoofing ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "An attacker could impersonate a legitimate customer to place\nfraudulent orders or access their order history",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2958,6 +3029,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 15
   }
 }
