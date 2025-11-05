@@ -186,12 +186,25 @@
                   "new": false,
                   "number": 43,
                   "score": ""
+                },
+                {
+                  "id": "aebec078-3489-470f-9013-6274421fe2c0",
+                  "title": "Fraudulent Order Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-\nrepudiation controls are in place.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 50,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 2,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -344,13 +357,6 @@
                 "spoofing": 2,
                 "repudiation": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -609,11 +615,24 @@
                   "new": false,
                   "number": 35,
                   "score": ""
+                },
+                {
+                  "id": "553d3dc1-e5b2-438a-935c-96021b2b8dc6",
+                  "title": "Repudiation",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer could deny placing an order if insufficient logging and non-\nrepudiation controls are in place.",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 51,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -3428,6 +3447,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 49
+    "threatTop": 51
   }
 }
