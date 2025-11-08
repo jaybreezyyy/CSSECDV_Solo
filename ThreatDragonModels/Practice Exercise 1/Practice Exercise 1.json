@@ -274,17 +274,6 @@
                 "denialOfService": 2,
                 "elevationOfPrivilege": 1
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1038,6 +1027,58 @@
               "y": 300
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "1c8279b6-c616-42cf-b06b-18bbd8ec3115",
+            "source": {
+              "x": 273,
+              "y": 170
+            },
+            "target": {
+              "x": 300,
+              "y": 600
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "5cd3cb3c-16c1-43f5-ab92-e924804b3525",
+            "source": {
+              "x": 260,
+              "y": 210
+            },
+            "target": {
+              "x": 1590,
+              "y": 180
+            }
           }
         ]
       },
